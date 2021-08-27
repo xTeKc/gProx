@@ -40,4 +40,11 @@ func main() {
 		log.Fatalln("Unable to read data")
 	}
 	fmt.Printf("Read %d bytes from stdin\n", s)
+
+	//use writer to write output
+	s, err := writer.Write(output)
+	if err != nil {
+		log.Fatalln("Unable to write data")
+	}
+	fmt.Printf("Wrote %d bytes to stdout\n", s)
 }
