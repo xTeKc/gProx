@@ -42,7 +42,7 @@ func main() {
 	fmt.Printf("Read %d bytes from stdin\n", s)
 
 	//use writer to write output
-	s, err := writer.Write(output)
+	s, err = writer.Write(input)
 	if err != nil {
 		log.Fatalln("Unable to write data")
 	}
