@@ -17,3 +17,9 @@ func (fooReader *FooReader) Read(b []byte) (int, error) {
 
 //FooWriter defines an io.Writer to write to Stdout
 type FooWriter struct{}
+
+//<Write> writes data to Stdout
+func (fooWriter *FooWriter) Write(b []byte) (int, error) {
+	fmt.Print("out > ")
+	return os.Stdout.Write(b)
+}
