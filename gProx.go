@@ -34,5 +34,10 @@ func main() {
 	//create buffer to hold input/output
 	input := make([]byte, 4096)
 
-	
+	//use reader to read input
+	s, err := reader.Read(input)
+	if err != nil {
+		log.Fatalln("Unable to read data")
+	}
+	fmt.Printf("Read %d bytes from stdin\n", s)
 }
