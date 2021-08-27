@@ -30,4 +30,9 @@ func main() {
 		reader FooReader
 		writer FooWriter
 	)
+
+	//create buffer to hold input/output
+	input := make([]byte, 4096)
+
+	
 }
