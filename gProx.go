@@ -23,3 +23,11 @@ func (fooWriter *FooWriter) Write(b []byte) (int, error) {
 	fmt.Print("out > ")
 	return os.Stdout.Write(b)
 }
+
+func main() {
+	//instantiate reader and writer
+	var (
+		reader FooReader
+		writer FooWriter
+	)
+}
