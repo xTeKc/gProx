@@ -5,3 +5,6 @@ import (
 	"log"
 	"os"
 )
+
+//defines an io.Reader to read from stdin
+type FooReader struct{}
