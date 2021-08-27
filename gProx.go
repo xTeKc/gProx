@@ -49,7 +49,7 @@ func main() {
 	fmt.Printf("Wrote %d bytes to stdout\n", s)
 }
 
-//copying data from a <Reader> to a <Writer> using Copy()
+//copying data from a <Reader> to a <Writer> using Copy() <FUNC PROTO>
 //-------------------------------------------------------
 // func Copy(dst io.Writer, src io.Reader) (written int64, error)
 
