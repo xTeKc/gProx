@@ -48,3 +48,18 @@ func main() {
 	}
 	fmt.Printf("Wrote %d bytes to stdout\n", s)
 }
+
+//copying data from a <Reader> to a <Writer> using Copy()
+//-------------------------------------------------------
+// func Copy(dst io.Writer, src io.Reader) (written int64, error)
+
+// func main() {
+// 	var (
+// 		reader FooReader
+// 		writer FooWriter
+// 	)
+
+// 	if _, err := io.Copy(&writer, &reader); err != nil {
+// 		log.Fatalln("Unable to read/write data")
+// 	}
+// }
